@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
-import hypernova, { serialize, load } from 'hypernova';
+import hypernova, { serialize, load } from '@skroutz/hypernova';
 
 export const renderReact = (name, component) => hypernova({
   server() {

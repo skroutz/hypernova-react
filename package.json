@@ -1,6 +1,6 @@
 {
-  "name": "hypernova-react",
-  "version": "2.1.0",
+  "name": "@skroutz/hypernova-react",
+  "version": "2.1.1",
   "description": "React bindings for Hypernova",
   "main": "lib/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/airbnb/hypernova-react.git"
+    "url": "git+https://github.com/skroutz/hypernova-react.git"
   },
   "keywords": [
     "react",
@@ -42,11 +42,11 @@
   "author": "Josh Perez <josh.perez@airbnb.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/hypernova-react/issues"
+    "url": "https://github.com/skroutz/hypernova-react/issues"
   },
-  "homepage": "https://github.com/airbnb/hypernova-react#readme",
+  "homepage": "https://github.com/skroutz/hypernova-react#readme",
   "peerDependencies": {
-    "hypernova": "^2.0.0",
+    "@skroutz/hypernova": "^2.5.1",
     "react": "^0.14 || ^15 || ^16",
     "react-dom": "^0.14 || ^15 || ^16"
   },
