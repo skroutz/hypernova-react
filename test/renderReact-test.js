@@ -3,6 +3,7 @@ import { assert } from 'chai';
 import sinon from 'sinon';
 import ReactDOM from 'react-dom';
 import ifReact from 'enzyme-adapter-react-helper/build/ifReact';
+import { atob } from 'core-js-pure/stable';
 
 import ExampleReactComponent from './components/ExampleReactComponent';
 import { renderReact } from '..';
@@ -32,6 +33,7 @@ describe('renderReact', () => {
 
       global.window = window;
       global.document = window.document;
+      global.atob = atob;
 
       const hydrateMethod = sinon.spy(ReactDOM, 'hydrate');
 
@@ -65,6 +67,7 @@ describe('renderReact', () => {
 
       global.window = window;
       global.document = window.document;
+      global.atob = atob;
 
       // Calling it again for the client.
       renderReact('ExampleReactComponent', ExampleReactComponent);
